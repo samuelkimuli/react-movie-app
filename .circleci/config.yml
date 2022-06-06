@@ -81,7 +81,7 @@ jobs:
             
       - run:
           name: Build Project
-          command: 
+          command: |
             npm install
             npm run build
             cd build
