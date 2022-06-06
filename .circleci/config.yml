@@ -43,8 +43,8 @@ jobs:
       - run:
           name: Build Project
           command: 
-            npm i ngx-text-diff --legacy-peer-deps
-            npm run build
+            sudo npm install -g yarn
+            yarn build
             cd build
             zip ../build.zip -r * .[^.]*
             echo "Build successful"
