@@ -43,11 +43,11 @@ jobs:
       - run:
           name: Build Project
           command: 
-            npm install ngx-text-diff --legacy-peer-deps
+            npm install 
             npm run build
             cd build
             zip ../build.zip -r * .[^.]*
-            echo "Build successful"
+            echo "Bundle successful"
       - run:
           name: Deploy to AWS S3
           command: |
