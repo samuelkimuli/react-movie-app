@@ -37,7 +37,9 @@ jobs:
           command: |
             sudo apt-get -y -qq update
             sudo apt-get install -y awscli
-            sudo apt-get install -y python-pip python-dev build-essential
+            sudo apt install -y python3-pip
+            sudo apt install -y build-essential libssl-dev libffi-dev python3-dev
+
       - run:
           name: Build Project
           command: 
@@ -74,6 +76,8 @@ jobs:
           command: |
             sudo apt-get -y -qq update
             sudo apt-get install -y awscli
+            sudo apt install -y python3-pip
+            sudo apt install -y build-essential libssl-dev libffi-dev python3-dev
             
       - run:
           name: Build Project
